@@ -1,0 +1,20 @@
+html,
+body,
+#root {
+  width: 100%;
+  height: 100%;
+}
+
+html {
+  background-color: var(--DefaultBackgroundColor);
+  color: var(--DefaultColor);
+  font-family: var(--DefaultFontFamily);
+  font-size: 16px;
+  /* font-size: responsive; */
+  font-size: calc(10px + 9 * ((100vw - 420px) / 860));
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  -webkit-text-size-adjust: 100%;
+  box-sizing: border-box;
+}

@@ -1,0 +1,55 @@
+.NoteItem {
+  --NoteItem_Size: 35rem;
+  --NoteItem_BackgroundColor: #f9f9f9;
+  --NoteItem__Head_BackgroundColor: #f2f2f3;
+  --NoteItem_BorderRadius: 1rem;
+
+  position: relative;
+  font-size: 1rem;
+
+  &__Container {
+    width: var(--NoteItem_Size);
+    min-height: var(--NoteItem_Size);
+    position: relative;
+    background-color: var(--NoteItem_BackgroundColor);
+    border-radius: var(--NoteItem_BorderRadius);
+    border: 1px solid var(--NoteItem__Head_BackgroundColor);
+    margin-right: 5rem;
+  }
+
+  &__Head {
+    display: flex;
+    padding: 1rem 2rem;
+    background-color: var(--NoteItem__Head_BackgroundColor);
+    border-radius: var(--NoteItem_BorderRadius) var(--NoteItem_BorderRadius) 0 0;
+  }
+
+  &__Content {
+    display: flex;
+    flex-grow: 1;
+    height: 100%;
+    padding: 1rem 2rem;
+    border-radius: 0 0 var(--NoteItem_BorderRadius) var(--NoteItem_BorderRadius);
+  }
+
+  &__ButtonContainer {
+    display: flex;
+    position: relative;
+    padding: 1rem;
+  }
+
+  &__Button {
+    justify-items: flex-start;
+    &:not(:last-child) {
+      margin-right: 1rem;
+    }
+
+    &--right {
+      margin-left: auto;
+    }
+
+    &--left {
+      margin-right: auto;
+    }
+  }
+}

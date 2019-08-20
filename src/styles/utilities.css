@@ -1,0 +1,16 @@
+.Utils--tabular {
+  font-feature-settings: "tnum";
+  font-variant-numeric: tabular-nums;
+}
+
+.Utils--unorderedList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.Utils--textEllipsis {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

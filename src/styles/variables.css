@@ -1,0 +1,18 @@
+:root {
+  /* #fff1e6 | #f1fdff | #fcfaeb | #e3f8f4*/
+  /*   --shadow-sm: 0 1px 1px rgba(0, 0, 0, .2), 0 1px 8px rgba(0, 0, 0, .1);
+  --shadow-md: 0 1px 8px rgba(0, 0, 0, .1), 0 8px 24px rgba(0, 0, 0, .15);
+  --shadow-lg: 0 1px 8px rgba(0, 0, 0, .1), 0 16px 48px rgba(0, 0, 0, .1), 0 24px 60px rgba(0, 0, 0, .1);
+ */
+  --DefaultBackgroundColor: #f1fdff;
+  --DefaultColor: #121212;
+  --DefaultLinkColor: #3c6dff;
+  --DefaultBorderColor: color-mod(var(--DefaultColor) a(5%));
+  --DefaultFontFamily: "Barlow", "Barlow Condensed", "Rubik", "Chivo", "Barlow Semi Condensed", "Work Sans", "Karla", "Playfair Display", system-ui;
+  --DefaultLayoutPadding: 5em;
+  --DefaultTransition: 0.15s;
+}
+
+/* Media Query tags */
+/* @custom-media --DesktopSmall screen and (width < 960px); */
+@custom-media --DesktopSmall screen and (width <= 1280px);

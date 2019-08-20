@@ -1,0 +1,43 @@
+.Header {
+  --Header_Size: 35rem;
+  --Header_BackgroundColor: #f9f9f9;
+  --Header__Head_BackgroundColor: #f2f2f3;
+  --Header_BorderRadius: 1rem;
+
+  position: relative;
+  font-size: 1rem;
+
+  display: flex;
+  flex-flow: column;
+  flex-wrap: nowrap;
+  justify-content: stretch;
+  width: var(--Header_Size);
+  background-color: var(--Header_BackgroundColor);
+  border-radius: var(--Header_BorderRadius);
+  border: 1px solid var(--Header__Head_BackgroundColor);
+
+  margin-right: 5rem;
+  &:first-child {
+    margin-left: 15rem;
+  }
+
+  &__Head {
+    display: flex;
+    padding: 1rem 2rem;
+    background-color: var(--Header__Head_BackgroundColor);
+    border-radius: var(--Header_BorderRadius) var(--Header_BorderRadius) 0 0;
+  }
+
+  &__Content {
+    display: flex;
+    height: 100%;
+    padding: 1rem 2rem;
+    border-radius: 0 0 var(--Header_BorderRadius) var(--Header_BorderRadius);
+  }
+
+  &__ButtonContainer {
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+  }
+}

@@ -1,0 +1,18 @@
+.FloatingSidebar {
+  --FloatingSidebar_Size: 15rem;
+  --FloatingSidebar_BackgroundColor: #f9f9f9;
+  --FloatingSidebar__Head_BackgroundColor: #f2f2f3;
+  --FloatingSidebar_BorderRadius: 1rem;
+
+  position: relative;
+  font-size: 1rem;
+
+  &__Container {
+    position: relative;
+    margin-left: 15rem;
+    margin-right: 5rem;
+  }
+
+  &__Button {
+  }
+}
